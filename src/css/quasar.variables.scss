@@ -1,0 +1,248 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+$primary: #25a393;
+$secondary: #753b97;
+$danger: #753b97;
+$success: #72ce46;
+$white: #fff;
+$grey: #858585;
+$grey-dark: #858585;
+$black: #000;
+
+//mixins
+
+@mixin hr-vr-center {
+  display: map-get($displays, "flex");
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin hr-vr-center-between {
+  display: map-get($displays, "flex");
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin box-vr-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin box-vr-center {
+  display: flex;
+  align-items: center;
+}
+
+$value-0: 0px;
+$value-1: 1px;
+$value-2: 2px;
+$value-3: 3px;
+$value-4: 4px;
+$value-5: 5px;
+$value-6: 6px;
+$value-7: 7px;
+$value-8: 8px;
+$value-9: 9px;
+$value-10: 10px;
+$value-11: 11px;
+$value-12: 12px;
+$value-13: 13px;
+$value-14: 14px;
+$value-15: 15px;
+$value-16: 16px;
+$value-17: 17px;
+$value-18: 18px;
+$value-19: 19px;
+$value-20: 20px;
+$value-22: 22px;
+$value-24: 24px;
+$value-25: 25px;
+$value-26: 26px;
+$value-27: 27px;
+$value-28: 28px;
+$value-30: 30px;
+$value-32: 32px;
+$value-33: 33px;
+$value-35: 35px;
+$value-38: 38px;
+$value-40: 40px;
+$value-42: 42px;
+$value-43: 43px;
+$value-45: 45px;
+$value-47: 47px;
+$value-50: 50px;
+$value-53: 53px;
+$value-54: 54px;
+$value-55: 55px;
+$value-56: 56px;
+$value-60: 60px;
+$value-65: 65px;
+$value-70: 70px;
+$value-75: 75px;
+$value-80: 80px;
+$value-85: 85px;
+$value-86: 86px;
+$value-90: 90px;
+$value-95: 95px;
+$value-100: 100px;
+$value-107: 107px;
+$value-110: 110px;
+$value-116: 116px;
+$value-118: 118px;
+$value-120: 120px;
+$value-125: 125px;
+$value-135: 135px;
+$value-140: 140px;
+$value-150: 150px;
+$value-160: 160px;
+$value-168: 168px;
+$value-170: 170px;
+$value-177: 177px;
+$value-180: 180px;
+$value-187: 187px;
+$value-194: 194px;
+$value-200: 200px;
+$value-215: 215px;
+$value-230: 230px;
+$value-250: 250px;
+$value-255: 255px;
+$value-260: 260px;
+$value-280: 280px;
+$value-300: 300px;
+$value-360: 360px;
+$value-400: 400px;
+$value-448: 448px;
+$value-470: 470px;
+$value-447: 447px;
+$value-520: 520px;
+$value-980: 980px;
+$percentage-2: 2%;
+$percentage-3: 3%;
+$percentage-4: 4%;
+$percentage-100: 100%;
+$percentage-200: 200%;
+$percentage-10: 10%;
+$percentage-17: 17%;
+$percentage-20: 20%;
+$percentage-22: 22%;
+$percentage-30: 30%;
+$percentage-33: 33%;
+$percentage-35: 35%;
+$percentage-21: 21%;
+$percentage-25: 25%;
+$percentage-30: 30%;
+$percentage-39: 39%;
+$percentage-40: 40%;
+$percentage-42: 42%;
+$percentage-45: 45%;
+$percentage-49: 49%;
+$percentage-50: 50%;
+$percentage-60: 60%;
+$percentage-55: 55%;
+$percentage-70: 70%;
+$percentage-75: 75%;
+$percentage-80: 80%;
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "hard": 600,
+  "bold": 700,
+  "extra-bold": 800,
+);
+$text-aligns: (
+  "left": left,
+  "center": center,
+  "right": right,
+  "justify": justify,
+);
+$font-sizes: (
+  "font-6": 6px,
+  "font-8": 8px,
+  "font-10": 10px,
+  "font-11": 11px,
+  "font-12": 12px,
+  "font-13": 13px,
+  "font-14": 14px,
+  "font-15": 15px,
+  "font-16": 16px,
+  "font-17": 17px,
+  "font-18": 18px,
+  "font-20": 20px,
+  "font-22": 22px,
+  "font-24": 24px,
+  "font-25": 25px,
+  "font-26": 26px,
+  "font-28": 28px,
+  "font-30": 30px,
+  "font-32": 32px,
+  "font-35": 35px,
+  "font-38": 38px,
+  "font-40": 40px,
+  "font-42": 42px,
+  "font-45": 45px,
+  "font-50": 50px,
+  "font-52": 52px,
+  "font-55": 55px,
+  "font-60": 60px,
+  "font-65": 65px,
+  "font-70": 70px,
+  "font-77": 77px,
+  "font-80": 80px,
+);
+$floats: (
+  "left": left,
+  "right": right,
+);
+$borderRadius: (
+  "value10": 10px,
+  "value12": 12px,
+  "value20": 20px,
+  "value5": 5px,
+  "value7": 7px,
+  "value3": 3px,
+  "value50": 50px,
+  "value15": 15px,
+
+  "percentage50": 50%,
+  "percentage100": 100%,
+);
+$displays: (
+  "block": block,
+  "inline-block": inline-block,
+  "inline": inline,
+  "none": none,
+  "inherit": inherit,
+  "flex": flex,
+  "grid": grid,
+  "inline-flex": inline-flex,
+  "table-cell": table-cell,
+);
+$positions: (
+  "absolute": absolute,
+  "relative": relative,
+  "fixed": fixed,
+);
+$text-transforms: (
+  "uppercase": uppercase,
+  "lowercase": lowercase,
+  "capitalize": capitalize,
+);

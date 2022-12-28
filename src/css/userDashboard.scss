@@ -1,0 +1,123 @@
+h3.comman-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 33px;
+  padding-top: 20px;
+}
+.bg-box {
+  background: #ffffff;
+  border: $value-1 solid #d7d7d7;
+  border-radius: map-get($borderRadius, value12);
+  padding: $value-30;
+
+  .sub-box {
+    border-radius: map-get($borderRadius, value12);
+    width: $percentage-100;
+    height: $value-118;
+    @include hr-vr-center;
+
+    &.sub-box-total {
+      background: rgba(79, 45, 127, 0.2);
+      border: $value-1 solid rgba(79, 45, 127, 0.6);
+    }
+
+    &.sub-box-active {
+      background: rgba(84, 181, 94, 0.2);
+      border: $value-1 solid rgba(84, 181, 94, 0.6);
+    }
+
+    &.sub-box-block {
+      background: rgba(212, 97, 97, 0.2);
+      border: $value-1 solid rgba(212, 97, 97, 0.6);
+    }
+
+    &.sub-box-online {
+      background: rgba(84, 181, 94, 0.2);
+      border: $value-1 solid rgba(84, 181, 94, 0.6);
+    }
+
+    img {
+      width: $value-40;
+      height: $value-40;
+    }
+
+    h5 {
+      font-size: $value-25;
+      font-weight: map-get($font-weights, bold);
+    }
+
+    .sub-img {
+      border-radius: map-get($borderRadius, value10);
+      width: $value-56;
+      height: $value-56;
+      @include hr-vr-center;
+
+      &.sub-img-total {
+        background: rgba(79, 45, 127, 0.5);
+      }
+
+      &.sub-img-active {
+        background: rgba(84, 181, 94, 0.5);
+      }
+
+      &.sub-img-block {
+        background: rgba(213, 97, 97, 0.5);
+      }
+
+      &.sub-img-online {
+        background: rgba(161, 225, 138, 0.5);
+      }
+    }
+  }
+}
+
+.filter-card {
+  background: rgba(79, 45, 127, 0.06);
+  border: $value-1 solid rgba(79, 45, 127, 0.31);
+  border-radius: map-get($borderRadius, "value15");
+
+  .q-field {
+    .q-field__control {
+      width: $value-360;
+      height: $value-40;
+      background: #ffffff;
+      border: $value-1 solid #cccccc;
+      border-radius: map-get($borderRadius, "value5");
+      min-height: $value-40;
+    }
+
+    .q-field__marginal {
+      height: $value-40;
+    }
+  }
+
+  .filter-field {
+    display: map-get($displays, "flex");
+
+    .hr-form {
+      @include box-vr-center;
+
+      label {
+        font-size: $value-16;
+        font-weight: map-get($font-weights, medium);
+      }
+    }
+  }
+
+  .status-checkbox {
+    @include box-vr-center;
+    justify-content: flex-end;
+    margin-right: $value-13;
+
+    label {
+      font-size: $value-16;
+      font-weight: map-get($font-weights, medium);
+    }
+  }
+}
+
+.userlist-box {
+  .head-sec {
+    @include hr-vr-center-between;
+  }
+}

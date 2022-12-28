@@ -1,0 +1,439 @@
+/*php9 report page start*/
+.report_body_wrapper {
+  background-color: $white;
+  // width: 900px;
+  // margin: 0 auto;
+  padding: $value-10;
+}
+.report_head {
+  width: $percentage-100;
+  text-align: center;
+  @include content-center;
+  a {
+    width: $value-70;
+    display: map-get($displays, inline-block);
+  }
+}
+
+.main_heading {
+  margin: 0;
+  padding-left: $value-15;
+  font-size: map-get($font-sizes, font-18);
+  color: $black;
+}
+.patient_info_box_wrapper {
+  display: map-get($displays, block);
+  width: $percentage-100;
+  margin-top: $value-10;
+  margin-bottom: $value-5;
+  .patient_info {
+    width: 400px;
+    background-color: $white;
+    border: 1px solid #ccc;
+    border-radius: $value-10;
+    h5 {
+      color: $secondary;
+      font-size: map-get($font-sizes, font-16);
+      margin: 0;
+      padding: $value-10 $value-10;
+      font-weight: 600;
+      text-align: center;
+      border-bottom: 1px solid $secondary;
+      background-color: $white;
+      border-top-left-radius: $value-10;
+      border-top-right-radius: $value-10;
+    }
+    .list_patient_info {
+      margin: 0;
+      padding: $value-10;
+      list-style-type: none;
+      background-color: $white;
+      border-bottom-left-radius: $value-10;
+      border-bottom-right-radius: $value-10;
+      li {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: $value-5;
+        margin-bottom: $value-5;
+        font-weight: 600;
+        display: map-get($displays, flex);
+        align-items: center;
+        justify-content: space-between;
+        background-color: $white;
+        font-size: map-get($font-sizes, font-13);
+        span {
+          color: #928a8a;
+          text-align: right;
+        }
+        &:last-child {
+          border-bottom: none;
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.form_heading {
+  display: map-get($displays, inline-block);
+  text-align: center;
+  font-weight: 700;
+  margin: $value-10 0 $value-10 0;
+  width: $percentage-100;
+  font-size: map-get($font-sizes, font-22);
+}
+.question_title {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: map-get($font-sizes, font-14);
+  margin: $value-10 0 $value-15 0;
+  display: map-get($displays, inline-block);
+  width: $percentage-100;
+}
+
+.phq9_ques_list_bg {
+  display: map-get($displays, inline-block);
+  width: $percentage-100;
+  .phq9_ques_list_box {
+    padding: $value-5 $value-10;
+    background-color: $white;
+    border: 1px solid #ddd;
+    border-radius: $value-10;
+    margin-bottom: $value-10;
+    .qusetion {
+      margin: 0 0 0 0;
+      font-weight: 600;
+      font-size: map-get($font-sizes, font-13);
+    }
+    .radio_group {
+      color: #5e5c5f;
+      font-size: map-get($font-sizes, font-12);
+      margin-top: -5px;
+      margin-left: -10px;
+      input {
+        vertical-align: middle;
+        margin: 0;
+        top: -2px;
+        position: map-get($positions, relative);
+      }
+      label {
+        margin-right: $value-15;
+        font-size: map-get($font-sizes, font-13);
+      }
+      .q-radio__inner {
+        width: auto;
+        min-width: 32px;
+        height: 30px;
+        top: 8px;
+        .q-radio__bg {
+          top: 2%;
+          left: 5%;
+          width: 100%;
+          height: 45%;
+        }
+      }
+    }
+  }
+}
+
+.phq_total_wrapper {
+  display: map-get($displays, inline-block);
+  width: $percentage-100;
+  text-align: center;
+  margin-top: $value-0;
+  margin-bottom: $value-0;
+  .btn_box {
+    border: 3px solid $primary;
+    background-color: rgb(37, 163, 147, 0.1);
+    display: map-get($displays, inline-block);
+    border-radius: $value-10;
+    padding: $value-5;
+    p {
+      margin: 0;
+      font-weight: 700;
+      display: map-get($displays, inline-block);
+      font-size: map-get($font-sizes, font-16);
+    }
+    span {
+      color: $white;
+      background-color: $primary;
+      border-radius: $value-5;
+      padding: $value-2 $value-10;
+      display: map-get($displays, inline-block);
+      font-size: map-get($font-sizes, font-16);
+      margin-left: $value-5;
+      font-weight: 700;
+    }
+  }
+}
+
+.patient_2column_box_bg {
+  display: map-get($displays, flex);
+  justify-content: space-between;
+  width: $percentage-100;
+  .patient_info {
+    &.box1 {
+      width: 35%;
+    }
+    &.box2 {
+      width: 62%;
+    }
+  }
+}
+
+.phq_table_box {
+  font-size: map-get($font-sizes, font-11);
+  border: none;
+  border-collapse: collapse;
+  overflow: hidden;
+  width: $percentage-100;
+  height: $percentage-100;
+  border-radius: $value-10;
+  thead {
+    tr {
+      th {
+        border-bottom: 1px solid #ddd;
+        padding: $value-2 $value-5;
+        font-weight: 600;
+        border-right: 1px solid #ddd;
+        background-color: rgb(37 163 147 / 20%);
+        color: $primary;
+        &:last-child {
+          border-right: none;
+        }
+        &:first-child {
+          width: 20%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        border-bottom: 1px solid #ddd;
+        padding: $value-2 $value-5;
+        border-right: 1px solid #ddd;
+        background-color: $white;
+        overflow: hidden;
+        &:first-child {
+          width: 20%;
+          text-align: center;
+        }
+        &:last-child {
+          border-right: none;
+        }
+      }
+      &:last-child {
+        td {
+          border-bottom: none;
+        }
+      }
+      &.active {
+        td {
+          background-color: rgb(117 59 151 / 20%);
+          color: var(--Secondary);
+        }
+      }
+    }
+  }
+}
+
+.readiness_ruler_bg {
+  justify-content: center;
+}
+.form_heading.phq9 {
+  margin-bottom: 0;
+  font-size: map-get($font-sizes, font-18);
+}
+.report_body_wrapper.phq9report {
+  padding-left: $value-20;
+  padding-right: $value-20;
+}
+/*php9 report page end*/
+
+/*rediness ruler report page*/
+.ruler-horizontal-box {
+  background: $white;
+  border-radius: $value-15;
+  display: map-get($displays, flex);
+  width: 680px;
+  margin: 0 auto $value-30 auto;
+  .ruler-important {
+    background: $secondary;
+    border-bottom-left-radius: $value-15;
+    border-top-left-radius: $value-15;
+    width: $value-70;
+    h4 {
+      color: $white;
+      font-size: map-get($font-sizes, font-22);
+      font-weight: 400;
+      margin: 0;
+      padding-bottom: $value-75;
+      padding-top: $value-75;
+      position: map-get($positions, relative);
+      transform: rotate(270deg) translateX(-30px);
+      // white-space: nowrap;
+      // writing-mode: vertical-rl;
+      // -webkit-writing-mode: vertical-rl;
+    }
+  }
+  .readines-ruler-white-box {
+    padding: $value-20;
+    width: $percentage-100;
+    min-height: 185px;
+    background-color: $white;
+    border: 1px solid #ddd;
+    border-top-right-radius: $value-10;
+    border-bottom-right-radius: $value-10;
+    h4 {
+      font-size: map-get($font-sizes, font-18);
+      font-weight: 600;
+      margin: 0;
+    }
+    .ruler-background-radiness {
+      @include content-center;
+      padding-top: $value-30;
+      width: $percentage-100;
+    }
+    .radio-title-group {
+      align-items: center;
+      display: map-get($displays, flex);
+      justify-content: space-between;
+      width: $percentage-100;
+    }
+    .radio-btn-number {
+      position: map-get($positions, relative);
+      input {
+        cursor: pointer;
+        height: $percentage-100;
+        margin: 0;
+        opacity: 0;
+        position: map-get($positions, absolute);
+        width: $percentage-100;
+        z-index: 2;
+      }
+      .checked-ruler {
+        align-items: center;
+        background-color: #753b9733;
+        border: 2px solid #753b9780;
+        border-radius: $percentage-50;
+        color: $secondary;
+        display: map-get($displays, inline-flex);
+        height: $value-40;
+        justify-content: center;
+        padding-top: 2px;
+        text-align: center;
+        width: $value-40;
+      }
+    }
+    .ruler-chart {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding-left: $value-20;
+      padding-right: $value-20;
+      padding-top: $value-15;
+      h5 {
+        color: #5e5c5f;
+        font-size: map-get($font-sizes, font-14);
+        margin: $value-20 0 0 0;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.filter-switch {
+  label {
+    cursor: pointer;
+  }
+  input:not(:checked) + label {
+    background-color: initial;
+    box-shadow: none;
+  }
+}
+
+.ruler-horizontal-box.second {
+  .ruler-important {
+    background: $primary;
+  }
+  .readines-ruler-white-box {
+    .radio-btn-number {
+      .checked-ruler {
+        background-color: #25a39333;
+        border: 2px solid #25a39380;
+        color: $primary;
+      }
+    }
+  }
+}
+
+.filter-switch-item {
+  input:checked + label {
+    background-color: $secondary !important;
+    border-color: $secondary !important;
+    color: inherit;
+    color: $white !important;
+  }
+}
+
+.ruler-horizontal-box.second {
+  .filter-switch-item {
+    input:checked + label {
+      background-color: $primary !important;
+      border-color: $primary !important;
+      color: inherit;
+      color: $white !important;
+    }
+  }
+}
+
+.ruler-horizontal-box.first {
+  .radio-btn-number {
+    .q-radio {
+      position: map-get($positions, absolute);
+      top: 0;
+      left: 0;
+      width: $percentage-100;
+      height: $percentage-100;
+      opacity: 0;
+      &[aria-checked="true"] + label {
+        background-color: $secondary !important;
+        border-color: $secondary !important;
+        color: inherit;
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+.ruler-horizontal-box.second {
+  .radio-btn-number {
+    .q-radio {
+      position: map-get($positions, absolute);
+      top: 0;
+      left: 0;
+      width: $percentage-100;
+      height: $percentage-100;
+      opacity: 0;
+      &[aria-checked="true"] + label {
+        background-color: $primary !important;
+        border-color: $primary !important;
+        color: inherit;
+        color: $white !important;
+      }
+    }
+  }
+}
+
+/*******************************/
+.report_popup_bg {
+  .q-card__section {
+    justify-content: flex-end;
+  }
+}
+
+@page {
+  margin: auto;
+}

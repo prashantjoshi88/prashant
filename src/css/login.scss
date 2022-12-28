@@ -1,0 +1,394 @@
+// .user_account_header {
+//   padding: $value-30 $value-15 $value-0 $value-15;
+//   text-align: map-get($text-aligns , center );
+//   .title {
+//     color: $primary;
+//     font-weight: bold;
+//     font-size: map-get($font-sizes, font-30);
+//     line-height: normal;
+//     margin: 0 0 $value-5 0;
+//   }
+
+//   .small_title {
+//     color: #21472f;
+//     font-size: 16px;
+//     padding-top: $value-0;
+//     margin: 0 !important;
+
+//   }
+
+// }
+
+// .login_form {
+//   .social_login_btn {
+//     &.bg-primary {
+//       width: $percentage-100;
+//       border-radius: $value-50;
+//       letter-spacing: 1px;
+//       margin: $value-15 0 0 0;
+//       border: none;
+//       font-size: map-get($font-sizes, font-16);
+//     }
+//     &::before {
+//       box-shadow: none;
+//     }
+//   }
+//   .q-btn--standard {
+//     border: 1px solid #c4c4c4;
+//     width: $percentage-100;
+//     border-radius: $value-50;
+//     padding: $value-10;
+//     min-height: $value-45;
+//   }
+//   .social_login_btn {
+//     .q-icon {
+//       position: absolute;
+//       top: 50%;
+//       left: 22px;
+//       transform: translateY(-50%);
+//     }
+//   }
+
+//   .divider_or_text {
+//     font-size: $value-13;
+//     font-weight: map-get($font-weights, medium);
+//   }
+//   .login-bottom-text {
+//     margin: 30px 0 0 0;
+//     font-weight: map-get($font-weights, medium);
+//     a {
+//       color: #0ba946;
+//     }
+//   }
+//   .login-sec-txt {
+//     margin: 20px 0 0px 0;
+//   }
+//   .q-btn__content {
+//     span.block {
+//       font-size: map-get($font-sizes , font-14 );
+//       font-weight: map-get($font-weights , hard );
+//     }
+//   }
+// }
+// .q-field--outlined {
+//   .q-field__control {
+//     border-radius: $value-6;
+//     // background-color: $light;
+//     border: 1px solid rgba(229, 229, 229, 0.8);
+//   }
+// }
+// .q-icon {
+//   img {
+//     width: $value-20;
+//     height: $value-20;
+//   }
+// }
+// .text-black {
+//   text-transform: none;
+// }
+// .q-checkbox__bg.absolute {
+//   border: 1px solid #e5e5e5;
+//   border-radius: $value-3;
+// }
+// .gurdia_box {
+//   background: rgba(11, 169, 70, 0.05);
+//   border: 1px solid rgba(11, 169, 70, 0.08);
+//   border-radius: $value-10;
+//   padding: $value-18;
+//   padding-bottom: $value-3;
+//   margin: 0 0 $value-15 0;
+// }
+// .divider_or_text {
+//   position: relative;
+
+//   &::before {
+//     content: "";
+//     height: $value-1;
+//     background: #0000002c;
+//     width: $percentage-100;
+//     position: absolute;
+//     top: $percentage-50;
+//     left: 0;
+//     transform: translateY(-50%);
+//     z-index: -1;
+//   }
+// }
+// .divider_or_text {
+//   span {
+//     background-color: #fbfcfc;
+//     padding: 0 $value-10;
+//   }
+// }
+// //forgot password//
+
+// /*otp page start*/
+
+// .user_account_body {
+//   padding: $value-15;
+//   &.otp_box {
+//     .otp-input {
+//       width: $value-40;
+//       height: $value-40;
+//       padding: $value-5;
+//       margin: 0 $value-5;
+//       font-size: map-get($font-sizes, font-20);
+//       border-radius: 4px;
+//       border: 1px solid rgba(0, 0, 0, 0.3);
+//       text-align: center;
+//     }
+//     .numberbox {
+//       justify-content: center;
+//     }
+//   }
+// }
+// //checkout mail//
+// .login_form {
+//   .button-checkout-margin {
+//     margin-top: $value-0 !important;
+//   }
+//   .q-field__control {
+//     height: inherit;
+//   }
+//   .q-field--error {
+//     .q-field__bottom {
+//       padding-left: $value-0;
+//       padding-right: $value-0;
+//     }
+//   }
+// }
+// .checkout-footer-line {
+//   padding-top: $value-100;
+//   p {
+//     color: $gray;
+//     text-align: center;
+//     span {
+//       color: $darknegative;
+//     }
+//   }
+// }
+// .forgotr-icon {
+//   text-align: center;
+//   padding-top: $value-20;
+// }
+// .q-mb-md.one-line-mail{
+//   text-align: center;
+//   p{
+//     color: #000;
+//   }
+//   }
+
+
+// //myprofile//
+// .main-header {
+//   .right-arrow {
+//     float: map-get($floats, left);
+//     background-color: rgb(56, 173, 75, 10%);
+//     height: $value-30;
+//     width: $value-30;
+//     border-radius: $value-50;
+//     img {
+//       position: map-get($positions, absolute);
+//       top: $value-24;
+//       left:$value-24;
+//     }
+//   }
+// }
+
+// .main-header {
+//   .left-arrow {
+//     img {
+//       float: map-get($floats, right) !important;
+//     }
+//   }
+// }
+// .main-header {
+//   p {
+//     font-size: $value-18;
+//     text-align: map-get($text-aligns, center);
+//     font-weight: map-get($font-weights, bold);
+//   }
+// }
+
+// hr {
+//   border: 1px solid $bg-grey-light-light;
+//   margin-top: -15px;
+// }
+// .myprofile-page-header {
+//   text-align: map-get($text-aligns, center);
+//   position: map-get($positions, relative);
+//   width: $value-100;
+//   margin: 0 auto;
+// }
+
+// .text-center{
+
+// }
+// .myprofile-icon{
+//   height: 101px;
+//   width: 100.38px;
+//   background-color: #ccc;
+//   border-radius: $value-50;
+//   margin: 0 auto;
+//   position: map-get($positions, relative);
+// }
+// .myprofile-icon {
+//   img {
+//   height: 101px;
+//   width: 100.38px;
+//   border-radius: $value-50;
+// }
+
+// }
+// .q-mb-md {
+//   label{
+//     display: map-get($displays, block);
+//     color: $black;
+//     font-size: map-get($font-sizes, font-16);
+//     font-weight:map-get($font-weights, medium);
+//   }
+// }
+
+//   .main-box{
+//     background-color: #fff;
+//     padding: $value-10;
+//     border-radius: $value-8;
+//     border: 1px solid #DDE4EE;
+
+
+//   }
+//   span{
+//     color: #544b4b;
+//     font-size: map-get($font-sizes, font-12);
+//     font-weight: map-get($font-weights, regular);
+//   }
+// .col.add-box-left{
+//   background-color: #fff;
+//   border: 1px solid #E5E5E5;
+//   border-radius: $value-10;
+//   padding: $value-10;
+//   box-shadow: 1px 1px 10px #857a7a;
+//   margin: 0px 25px 0px 0px;
+
+//   p{
+//     font-size: map-get($font-sizes, font-13);
+//     padding: 6px 4px 0 4px;
+//   }
+// }
+// .col.add-box-right{
+//   background-color: #fff;
+//   border: 1px solid #E5E5E5;
+//   border-radius: $value-10;
+//   padding: $value-10;
+//   box-shadow: 1px 1px 10px #857a7a;
+
+//   p{
+//     font-size: map-get($font-sizes, font-13);
+//     padding: 6px 4px 0 4px;
+//   }
+// }
+// .coins-main7-box{
+//   display: map-get($displays, flex);
+//     justify-content: space-between;
+//     border-radius: $value-10;
+//     border: 1px solid $primary;
+//     padding: $value-15;
+//     align-items: map-get($text-aligns, center);
+// }
+// .coins-earth{
+//   display: map-get($displays, flex);
+//   justify-content: space-between;
+//   border: 2px solid $primary;
+//   border-radius: $value-50;
+//   align-items: center;
+//   padding: $value-6 $value-20 $value-6 $value-20;
+//   background-color: rgba(78, 200, 67, 20%);
+
+//    .icon{
+//      margin-right: $value-15;
+//    }
+// }
+// .coins-main5-box{
+//   position: map-get($positions, relative);
+//   .enter-coins{
+//     padding-bottom: 10px;
+//     padding-top: 10px;
+//   }
+//   .q-field__native{
+//     font-size: 13px;
+//   }
+//   .q-field__control{
+//     padding: 4px 12px;
+//   }
+//   .q-btn{
+//     position: map-get($positions, absolute);
+//     top: $value-17;
+//     right: $value-7;
+//     width: $percentage-17;
+//     padding: $value-0 $value-5;
+
+
+//     .block{
+//       color: #fff;
+//       font-size: map-get($font-sizes, font-12);
+//       padding: 0 10px 0 10px;
+
+//       input::placeholder{
+//         font-size: map-get($font-sizes, font-11);
+//       }
+//     }
+//   }
+// }
+// .image-camara{
+//   height: $value-25;
+//     width: $value-25;
+//     background-color: #fff;
+//     border: 2px solid $primary;
+//     border-radius: map-get($borderRadius, value50);
+//     padding: $value-3;
+//     position: map-get($positions, absolute);
+//     right: 0;
+//     bottom: $value-5;
+// }
+// .padding-class{
+//   padding-top: $value-10;
+// }
+// .user_profile_header{
+//   padding: $value-0 $value-15 $value-0 $value-15;
+//   color: $primary;
+
+
+
+//     .small_title {
+//       color: $lightdarkgreen;
+//       font-size: map-get($font-sizes, font-16);
+//       padding-top: $value-10;
+//       margin: $value-0 !important;
+
+//     }
+
+// }
+// .address-heading-left{
+//   position: map-get($positions, relative);
+// }
+// .address-heading-right{
+//   position: map-get($positions, absolute);
+//   top: $value-0;
+//   right: $value-0;
+// }
+// //myprofile page end//
+// /*otp page end*/
+
+// //register-page-start//
+
+// .link-tag-color{
+
+//   display: flex;
+//   padding-top: 10px;
+
+//   a{
+//     color: #000;
+
+//   }
+// }
+
+

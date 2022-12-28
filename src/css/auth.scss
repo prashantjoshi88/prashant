@@ -1,0 +1,203 @@
+.authentication-container {
+  width: auto;
+  max-width: $value-470  !important;
+  margin: 0 auto;
+}
+
+.align-center-box {
+  width: $percentage-100  !important;
+  display: inline-block;
+  background-color: rgb(85 38 124 / 6%);
+  padding: $value-30 $value-25 ;
+
+  a {
+    text-decoration: none;
+  }
+
+  .lable-text {
+    font-size: $value-18;
+    font-weight: map-get($font-weights, "regular");
+  }
+}
+
+.login_form .q-field {
+  margin-top: $value-6  !important;
+}
+
+.header-logo {
+  padding-bottom: $value-30;
+  text-align: center;
+}
+
+.social_login_btn {
+  // height: 45px;
+
+  &.cancle {
+    background-color: #fff !important;
+  }
+
+  &.auth-facter {
+    width: $value-120;
+    margin-left: $value-10;
+    margin-right: $value-10;
+    border-radius: map-get($borderRadius, "value5");
+  }
+
+  width: $percentage-100;
+}
+
+.text-dark {
+  color: $primary  !important;
+}
+
+h3.title {
+  font-size: $value-25;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: $value-20;
+}
+
+.q-field__control {
+  height: $value-42;
+  background-color: #ffff;
+}
+
+.geet-icon {
+  padding-bottom: $value-15;
+}
+
+.user_account_header {
+  p.small_title {
+    font-size: $value-18;
+  }
+
+  .small_title {
+    text-align: center;
+    margin-bottom: $value-20;
+  }
+}
+
+p.login-bottom-text {
+  margin-bottom: 0px;
+
+  .left-arrow {
+    font-size: $value-15;
+    color: #55267c;
+    font-weight: bold;
+    padding-right: $value-10;
+  }
+
+  span {
+    color: red;
+  }
+}
+
+.btn-conform {
+  text-align: center;
+}
+
+.btn-conform .col-md-6 {
+  width: $percentage-49;
+}
+
+.btn-conform .col-md-6:first-child {
+  margin-right: $percentage-2;
+}
+
+p.step-line {
+  color: #282727cc;
+  font-weight: map-get($font-weights, "medium");
+  font-size: $value-16;
+  text-align: center;
+}
+
+.otp-input {
+  width: $value-40;
+  height: $value-40;
+  border-radius: map-get($borderRadius, "value10");
+  border-color: #55267c;
+  margin-right: $value-15;
+  text-align: center;
+}
+
+.numberbox {
+  justify-content: center;
+}
+
+.text-field {
+  h3 {
+    font-size: $value-16;
+    font-weight: map-get($font-weights, "regular");
+    color: #454d54;
+  }
+
+  border: $value-1 solid #55267c;
+  border-radius: map-get($borderRadius, "value50");
+  padding: $value-6 $value-15;
+}
+
+.capital-name {
+  h4 {
+    font-size: $value-14;
+    font-weight: map-get($font-weights, "hard");
+    padding-top: $value-3;
+  }
+
+  border: $value-3 solid #d9d9d9;
+  border-radius: map-get($borderRadius, "value50");
+  display: inline-flex;
+  padding: $value-7;
+  background-color: #d9d9d9;
+  color: #454d54;
+}
+
+.main-box {
+  display: inline-flex;
+  padding-left: $value-10;
+}
+
+.google-mail {
+  justify-content: center;
+  margin-bottom: $value-20;
+}
+
+.login_form {
+  .block {
+    font-size: $value-14;
+  }
+}
+
+.qr-code {
+  img {
+    border: $value-1 solid #ccc;
+    padding: $value-20;
+    border-radius: map-get($borderRadius, "value10");
+  }
+}
+
+.otpfield {
+  span {
+    display: none;
+  }
+}
+
+.align-center-box-auth {
+  border: $value-2 solid #55267c;
+  border-radius: map-get($borderRadius, "value7");
+  width: $percentage-80  !important;
+  margin-right: auto;
+  margin-left: auto;
+  padding: $value-30 $value-25 ;
+}
+
+.small-title-verification {
+  font-size: $value-25;
+  font-weight: map-get($font-weights, "regular");
+  text-align: center;
+  padding-bottom: $value-15;
+  color: #989898;
+}
+
+.nameLogo {
+  text-transform: uppercase;
+}

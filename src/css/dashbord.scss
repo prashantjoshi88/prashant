@@ -1,0 +1,175 @@
+.user-dashbord-card {
+  display: map-get($displays, flex);
+  justify-content: space-around;
+  background-color: #fff;
+  border: $value-1 solid #fff;
+  box-shadow: 2px 2px 10px #9f9f9f;
+  border-radius: $value-15;
+  padding: $value-10 $value-10 $value-10 $value-17;
+  margin-top: -37px;
+  max-width: 389px;
+  margin-left: auto;
+  margin-right: auto;
+  .user-left-part {
+    width: $value-80;
+    flex: 0 0 auto;
+  }
+  .user-right-part {
+    padding-left: $value-15;
+  }
+}
+
+.user-reward {
+  display: map-get($displays, grid);
+  gap: $value-15;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  .dashbord-user {
+    display: map-get($displays, flex);
+    align-items: center;
+    padding-left: $value-10;
+  }
+
+  .Claimed-reward-right-part {
+    margin-left: $value-15;
+    color: #fff;
+    font-size: $value-25;
+    font-weight: map-get($font-weights, bold);
+    padding-right: $value-10;
+  }
+
+  .reward-boxes {
+    border-radius: $value-20;
+    width: $percentage-100;
+    padding: 10px 5px 0px 5px;
+
+    &.Claimed {
+      background-color: #f79489;
+    }
+
+    &.Recycle {
+      background-color: #eedc82;
+    }
+    &.Contribute {
+      background-color: #f2a7be;
+    }
+    &.Conserve {
+      background-color: #bec5e9;
+    }
+  }
+  .pera-reward {
+    margin-left: $value-16;
+    padding-top: $value-5;
+
+    span {
+      font-size: $value-16;
+      font-weight: map-get($font-weights, bold);
+      color: rgb(0 0 0 /50%);
+    }
+    p {
+      font-size: $value-12;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+}
+.line-reward {
+  display: map-get($displays, flex);
+  padding-top: $value-20;
+  justify-content: space-between;
+
+  p {
+    color: rgb(0 0 0);
+    font-size: $value-14;
+    font-weight: map-get($font-weights, bold);
+    padding-top: $value-5;
+  }
+  span {
+    color: rgba(78, 200, 67, 1);
+    font-size: $value-20;
+    font-weight: map-get($font-weights, bold);
+  }
+}
+
+.user_dash_reward_listing {
+  .address_listing_item {
+    padding: 0 !important;
+    border: none !important;
+
+    &.column2_box_grid {
+      display: inherit;
+      padding-left: $value-15 !important;
+      padding-right: $value-15 !important;
+      .q-card {
+        width: 200px;
+        flex: 0 0 auto;
+      }
+    }
+  }
+}
+
+.address_listing_box {
+  margin-top: 0 !important;
+}
+.reward_address_part {
+  &.q-mb-lg {
+    margin-bottom: 0 !important;
+  }
+}
+
+.Claimed-reward-left-part {
+  img {
+    height: 68px;
+  }
+}
+.dashbord-header {
+  background-color: $primary;
+  margin-top: $value-0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: $value-15;
+  padding-left: $value-15;
+  padding-top: $value-30;
+  padding-bottom: $value-30;
+  border-bottom-left-radius: $value-20;
+  border-bottom-right-radius: $value-20;
+  min-height: 112px;
+
+  span {
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+.header-small {
+  background-color: rgb(255 255 255 /30%);
+  border-radius: 50px;
+  border: 1px solid rgb(255 255 255 /30%);
+  height: 40px;
+  width: 40px;
+  padding: 11px;
+  text-align: center;
+}
+.dashbord-header-left {
+  display: flex;
+}
+.profile-background {
+  background-color: #ccc;
+  height: 52px;
+  width: 52px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.location-header {
+  padding-top: 5px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+
+  span {
+    font-weight: 500;
+    color: #fff;
+    margin-left: 7px;
+  }
+}
